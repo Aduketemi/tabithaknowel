@@ -7,7 +7,7 @@ export const Feature = () => {
         <div className="bg-white shadow-lg py-6 pl-6 grid grid-cols-1 md:grid-cols-[300px_1fr_80px] gap-6">
           {/* <div className="bg-gray-300 h-64"></div> */}
           <div className="w-64 h-full overflow-hidden bg-gray-300">
-              <img src={featureImg} alt="students image" className="w-full h-full object-cover"/>
+              <img src={featureImg} alt="students" className="w-full h-full object-cover"/>
           </div>
           <div>
             <h2 className="text-2xl font-bold mb-4">About Us</h2>
@@ -17,7 +17,7 @@ export const Feature = () => {
               scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
               of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-              Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and
+              Aldus PageMaker including versions of Lorem. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
             <Button className="mt-4 bg-orange-500 text-white">Let's Talk</Button>
