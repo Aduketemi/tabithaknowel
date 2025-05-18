@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
     "motion": "^12.6.3",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",

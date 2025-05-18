@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 export const Button = ({ children, className, variant, ...props }) => {
     const baseStyles = "px-4 py-2 rounded font-semibold transition-all duration-200";
     const variants = {
-        default: "bg-orange-500 text-white hover:bg-orange-600",
-        outline: "border border-orange-500 text-orange-500 hover:bg-orange-50",
-        ghost: "text-orange-500 hover:bg-orange-100",
+        default: "bg-primary text-white hover:bg-primary-600",
+        outline: "border border-primary text-primary hover:bg-primary-50",
+        ghost: "text-primary hover:bg-primary-100",
     };
 
     return (

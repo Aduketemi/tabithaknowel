@@ -1,7 +1,10 @@
 import { Button } from "./shared/Button"
 import heroImg from "../assets/images/heroimg.jpg"
+import { useModal } from "../contexts/ContactContext"
 
 export const Hero = () => {
+    const { openModal } = useModal();
+    
     return (
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
             <div>
@@ -11,7 +14,7 @@ export const Hero = () => {
                     Find an Independent Educational Consultant
                 </p>
                 <div className="flex space-x-4 mb-6">
-                    <Button variant="outline">Let's Talk</Button>
+                    <Button onClick={openModal} variant="outline">Let's Talk</Button>
                     <Button className="bg-orange-500 text-white">Find a Consultant</Button>
                 </div>
                 <div className="flex space-x-4">
