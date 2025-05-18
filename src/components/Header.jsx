@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import logo from "../assets/images/TabithaKnowel.png"
+import logo from "../assets/images/2025tkisPG.png";
 import { BiCaretDown } from "react-icons/bi"
 import { Select, SelectButton, SelectOptions } from "./shared/Select"
 import { Button } from "./shared/Button"
@@ -29,7 +29,7 @@ export const Header = () => {
                     <div className="w-24 h-24" data-aos="fade-right" data-aos-duration="3000">
                         <img src={logo} alt="tabitha knowel logo" className="object-cover"/>
                     </div>
-                    <div className="text-2xl font-bold italic" data-aos="fade-right" data-aos-duration="1500">Tabitha Knowel</div>
+                    <div className="text-2xl font-bold italic" data-aos="fade-right" data-aos-duration="1500">Tabitha-Knowel Educational Consulting</div>
                 </div>
                 <nav className="space-x-6 hidden md:flex font-medium">
                     <Link to={"/"} className="hover:text-orange-500">Home</Link>
