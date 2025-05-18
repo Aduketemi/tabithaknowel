@@ -5,16 +5,16 @@ import { useModal } from "../contexts/ContactContext"
 export const Feature = () => {
   const { openModal } = useModal();
 
-    return (
-        <section className="p-8 w-4/5 m-auto">
-        <div className="bg-white shadow-lg py-6 pl-6 grid grid-cols-1 md:grid-cols-[300px_1fr_80px] gap-6">
-          {/* <div className="bg-gray-300 h-64"></div> */}
-          <div className="w-64 h-full overflow-hidden bg-gray-300">
-              <img src={featureImg} alt="students" className="w-full h-full object-cover"/>
-          </div>
-          <div>
-            <h2 className="text-2xl font-bold mb-4">About Us</h2>
-            <p className="text-sm text-justify">
+  return (
+    <section className="p-8 w-4/5 m-auto">
+      <div className="bg-white shadow-lg py-6 pl-6 grid grid-cols-1 md:grid-cols-[300px_1fr_80px] gap-6">
+        {/* <div className="bg-gray-300 h-64"></div> */}
+        <div className="w-64 h-full overflow-hidden bg-gray-300">
+          <img src={featureImg} alt="students" className="w-full h-full object-cover" />
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold mb-4">About Us</h2>
+          <p className="text-sm text-justify">
             Tabitha-Knowel Educational Consulting, we are passionate about
             guiding African students—especially Nigerians—towards fulfilling
             their dreams of quality education abroad. Since our inception, our
@@ -39,16 +39,15 @@ export const Feature = () => {
             educational journey or seeking to transfer to a new institution, our
             team is committed to helping you unlock your full potential and
             achieve success beyond borders.
-            </p>
-            <Button onClick={openModal} className="mt-4 bg-orange-500 text-white">Let's Talk</Button>
-          </div>
-          {/* <div className="flex flex-col justify-between hidden md:flex">
+          </p>
+          <Button onClick={openModal} className="mt-4 bg-orange-500 text-white">Let's Talk</Button>
+        </div>
+        {/* <div className="flex flex-col justify-between hidden md:flex">
             {Array(6).fill(0).map((_, index) => (
               <div key={index} className="w-full h-14 bg-gray-300"></div>
             ))}
           </div> */}
-        </div>
       </div>
-    </section>
+    </section >
   );
 };
