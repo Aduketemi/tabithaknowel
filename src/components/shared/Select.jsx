@@ -1,9 +1,11 @@
 import { useRef, useEffect, useState, useContext, createContext } from 'react'
 import PropTypes from 'prop-types';
+import { useLocation } from 'react-router-dom';
 
 export const SelectContext = createContext()
 
 export const Select = ({children}) => {
+    const location = useLocation();
 
     const [isOpen, setIsOpen] = useState(false)
     const dropdownRef = useRef(null);
@@ -22,6 +24,10 @@ export const Select = ({children}) => {
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
+
+    useEffect(() => {
+        setIsOpen(false);
+    }, [location]);
     
     return (
         <SelectContext.Provider value={{isOpen, toggleOpen}}>

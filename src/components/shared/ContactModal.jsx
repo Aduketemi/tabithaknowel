@@ -41,7 +41,7 @@ export const ContactModal = () => {
 
             {sent ? (
                 <>
-                    <p className="text-primary font-medium">Message sent! I’ll get back to you soon.</p>
+                    <p className="text-primary font-medium">Message sent! We’ll get back to you soon.</p>
                     <Button className="mt-4" variant="outline" onClick={closeModal}>
                         Close
                     </Button>
